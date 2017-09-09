@@ -1,0 +1,11 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8881/eureka/
+  instance:
+    hostname: yishan.center.com
+server:
+  port: 8888
+spring:
+  application:
+    name: admin-hi

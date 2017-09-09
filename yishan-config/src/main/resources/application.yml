@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: yishan-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@git.oschina.net:wise_man/yishan-config.git
+          search-paths: config
+          username:
+          password:
+      label: master
+server:
+  port: 8889

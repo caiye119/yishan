@@ -1,0 +1,16 @@
+server:
+  port: 8881
+eureka:
+  instance:
+    hostname: yishan.center.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: yishan-registry-center
+  output:
+    ansi:
+      enabled: always
